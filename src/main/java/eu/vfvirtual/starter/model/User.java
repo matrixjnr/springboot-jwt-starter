@@ -49,6 +49,12 @@ public class User implements UserDetails {
     @Column(name = "phone_number")
     private String phoneNumber;
 
+	@Column(name = "city")
+	private String city;
+
+	@Column(name = "country")
+	private String country;
+
     @Column(name = "enabled")
     private boolean enabled;
 
@@ -127,6 +133,22 @@ public class User implements UserDetails {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
 
     @Override
     public boolean isEnabled() {
