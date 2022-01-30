@@ -1,12 +1,11 @@
-package com.bfwg.service;
+package eu.vfvirtual.starter.service;
 
-import com.bfwg.model.User;
+
+import eu.vfvirtual.starter.model.User;
 
 import java.util.List;
 
-/**
- * Created by fan.jin on 2016-10-15.
- */
+
 public interface UserService {
     User findById(Long id);
     User findByUsername(String username);

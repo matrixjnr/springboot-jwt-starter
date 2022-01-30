@@ -1,17 +1,16 @@
-package com.bfwg.service.impl;
+package eu.vfvirtual.starter.service.impl;
 
 import java.util.List;
+
+import eu.vfvirtual.starter.model.User;
+import eu.vfvirtual.starter.repository.UserRepository;
+import eu.vfvirtual.starter.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import com.bfwg.model.User;
-import com.bfwg.repository.UserRepository;
-import com.bfwg.service.UserService;
 
-/**
- * Created by fan.jin on 2016-10-15.
- */
+
 
 @Service
 public class UserServiceImpl implements UserService {

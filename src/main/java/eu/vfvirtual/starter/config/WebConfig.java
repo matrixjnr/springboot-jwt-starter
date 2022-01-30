@@ -1,4 +1,4 @@
-package com.bfwg.config;
+package eu.vfvirtual.starter.config;
 
 import java.util.List;
 import org.springframework.context.annotation.Bean;

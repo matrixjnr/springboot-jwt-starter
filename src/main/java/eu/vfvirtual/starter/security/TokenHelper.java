@@ -1,4 +1,4 @@
-package eu.vfvirtual.starter.security.auth;
+package eu.vfvirtual.starter.security;
 
 import eu.vfvirtual.starter.common.TimeProvider;
 import eu.vfvirtual.starter.model.User;
@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
+@Component
 public class TokenHelper {
 	@Value("${app.name}")
 	private String APP_NAME;

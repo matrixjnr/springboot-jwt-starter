@@ -1,7 +1,8 @@
-package com.bfwg.service.impl;
+package eu.vfvirtual.starter.service.impl;
 
-import com.bfwg.model.User;
-import com.bfwg.repository.UserRepository;
+
+import eu.vfvirtual.starter.model.User;
+import eu.vfvirtual.starter.repository.UserRepository;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +16,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-/**
- * Created by fan.jin on 2016-10-31.
- */
+
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {

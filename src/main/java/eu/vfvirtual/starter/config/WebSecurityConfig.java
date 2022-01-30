@@ -1,9 +1,9 @@
-package com.bfwg.config;
+package eu.vfvirtual.starter.config;
 
-import com.bfwg.security.TokenHelper;
-import com.bfwg.security.auth.RestAuthenticationEntryPoint;
-import com.bfwg.security.auth.TokenAuthenticationFilter;
-import com.bfwg.service.impl.CustomUserDetailsService;
+import eu.vfvirtual.starter.security.auth.RestAuthenticationEntryPoint;
+import eu.vfvirtual.starter.security.auth.TokenAuthenticationFilter;
+import eu.vfvirtual.starter.security.TokenHelper;
+import eu.vfvirtual.starter.service.impl.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,9 +20,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
-/**
- * Created by fan.jin on 2016-10-19.
- */
 
 @Configuration
 @EnableWebSecurity
@@ -53,7 +50,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Autowired
-    TokenHelper tokenHelper;
+	TokenHelper tokenHelper;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
