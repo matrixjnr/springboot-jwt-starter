@@ -1,2 +1,14 @@
-package eu.vfvirtual.starter.common;public interface DeviceProvider {
+package eu.vfvirtual.starter.common;
+
+
+import org.springframework.stereotype.Component;
+import org.springframework.mobile.device.Device;
+import org.springframework.mobile.device.DeviceUtils;
+import javax.servlet.http.HttpServletRequest;
+
+@Component
+public class DeviceProvider {
+	public Device getCurrentDevice(HttpServletRequest request) {
+		return DeviceUtils.getCurrentDevice(request);
+	}
 }
